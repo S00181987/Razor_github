@@ -1,0 +1,25 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model RazorWroksheet.Pages.adderModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>adder</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            Number 1 : <input type="number" name="num1" /><br />
+            Number 2 : <input type="number" name="num2" /><br />
+            Press me <input type="submit" name="submit" value="Submit" />
+            @Model.Message;
+        </fieldset>
+        </form>
+</body>
+</html>

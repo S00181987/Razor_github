@@ -1,0 +1,50 @@
+﻿@page
+@model RazorWroksheet.Pages.taghelpplayModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>taghelpplay</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+        <label asp-for=Name1></label>
+         <input asp-for=Name1 /><br />
+        </fieldset>
+
+        <fieldset>
+            <label asp-for=Number1></label>
+            <input asp-for=Number1 /><br />
+       
+        <label asp-for=Number2></label>
+         <input asp-for=Number2 /><br />
+
+        <label asp-for=double1></label>
+         <input asp-for=double1 /><br />
+
+        <label asp-for=decimal1></label>
+         <input asp-for=decimal1 /><br />
+        </fieldset>
+        <fieldset>
+         <label asp-for=time></label>
+          <input asp-for=time><br />
+
+         <label asp-for=time2></label>
+          <input asp-for=time2><br />
+        </fieldset>
+
+        <fieldset>
+            <label asp-for=IsContactAllowed></label>
+             <input asp-for=IsContactAllowed><br />
+        </fieldset>
+        <p><input type="submit" name="submit" value="Submit" /></p>
+    </form>
+</body>
+</html>

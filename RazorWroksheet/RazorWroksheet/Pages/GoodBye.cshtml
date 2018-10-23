@@ -1,0 +1,31 @@
+﻿@page
+@{
+    Layout = null;
+    var currentDateTime = DateTime.Now;
+    var txt =" ";
+
+    if (DateTime.Now.Hour > 12)
+    {
+        txt = " Good Evening";
+    }
+    else
+    {
+
+        txt = " Good Morning";
+
+    }
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>page1</title>
+</head>
+<body>
+    <h1>This is GoodBye page</h1>
+    <h1>It is @currentDateTime@txt</h1>
+</body>
+</html>
